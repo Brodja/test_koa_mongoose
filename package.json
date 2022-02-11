@@ -1,0 +1,28 @@
+{
+  "name": "test_koa_mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brodja/test_koa_mongoose.git"
+  },
+  "author": "Bohdan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brodja/test_koa_mongoose/issues"
+  },
+  "homepage": "https://github.com/Brodja/test_koa_mongoose#readme",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-router": "^10.1.1",
+    "mongoose": "^6.2.1",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
