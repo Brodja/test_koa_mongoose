@@ -2,10 +2,10 @@
   "name": "test_koa_mongoose",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.ts"
+    "start": "nodemon app.ts"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Brodja/test_koa_mongoose#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
     "koa-router": "^10.1.1",
     "mongoose": "^6.2.1",
     "nodemon": "^2.0.15",
