@@ -33,10 +33,10 @@ exports.getItemById = async (id: string) => {
 
 exports.updateItem = async (body: ItemInterface) => {
     try {
-        if (!body.id) {
-            throw new Error("Id not exist");
-        }
+        if (!body.id) throw new Error("Id not exist");
         const filter = { _id: body.id }
+        const item = await Item.find(filter)
+        if(!item) throw new Error("Item not exist");
         const name: string = body.name;
         const category: string = body.category;
         const updateItem = await Item.findOneAndUpdate(filter, { name, category })
